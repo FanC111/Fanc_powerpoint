@@ -1,0 +1,62 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* 背景默认黑色 */
+}
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: white; /* 设置文字颜色为白色 */
+}
+
+/* 页面激活时显示 */
+.slide.active {
+    display: block;
+}
+
+/* 每页的背景颜色 */
+.slide.red {
+    background-color: red;
+}
+
+.slide.green {
+    background-color: green;
+}
+
+.slide.yellow {
+    background-color: yellow;
+}
+
+/* 按钮样式 */
+button {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 20px;
+}
+
+#nextBtn {
+    right: 20px;
+}
